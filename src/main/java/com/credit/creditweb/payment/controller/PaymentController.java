@@ -31,4 +31,24 @@ public class PaymentController {
 
         return "index";
     }
+
+    @GetMapping("/payment/proc")
+    public String proc(String card, long price, Model model) {
+
+        System.out.println(card);
+        System.out.println(price);
+
+
+//        RestTemplate restTemplate = new RestTemplate();
+//
+//        ResponseEntity<CreditInfo> response =
+//                restTemplate.exchange("http://localhost:8081/creditInfo/1234-4567-1234",HttpMethod.GET,null, CreditInfo.class);
+//
+//        CreditInfo creditInfo= response.getBody();
+//
+//        model.addAttribute("creditInfo", creditInfo);
+
+
+        return "index";
+    }
 }
